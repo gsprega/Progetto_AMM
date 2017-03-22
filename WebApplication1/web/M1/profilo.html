@@ -1,16 +1,34 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
-    <head>
-        <title>TODO supply a title</title>
+    <title>NerdBook</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+        <meta name="author" content="Giulio Sprega">
+        <meta name="keywords" content="amici nerd cerca social">
     <body>
-        <div>TODO write content</div>
+        <nav>
+            <ol>
+                <li><a href="descrizione.html">Aspetta, prima fammi vedere cosa &egrave;, vai alla Descrizione</a></li>
+                <li><a href="login.html">Guarda che ho gi&agrave; fatto, vai al login</a></li>
+            </ol>
+        </nav>
+        <div id="data">
+            <form action="servlet.java" method="post">
+                <label for="name">Nome</label>
+                    <input type="text" name="name" id="name"/><br/>
+                <label for="surname">Cognome</label>
+                    <input type="text" name="surname" id="surname"/><br/>
+                <label for="profileImg">Immagine del profilo</label>
+                    <input type="url" name="profileImg" id="profileImg"/><br/>
+                <label for="pres">Frase di presentazione</label>
+                <textarea rows="5" cols="25" name="pres" id="pres"></textarea><br/>
+                <label for="birthDate">Data di nascita</label>
+                    <input type="date" name="birthDate" id="birthDate"/><br/>
+                <label for="password">Password</label>
+                    <input type="password" name="password" id="password"/><br/>
+                <label for="confirmPswd">Conferma Password</label>
+                    <input type="password" name="confirmPswd" id="confirmPswd"/><br/>
+            </form>
+        </div>
     </body>
 </html>
